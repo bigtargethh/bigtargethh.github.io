@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>topman</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="目标选择 扫描单IP   nmap 192.168.1.1扫描主机   nmap www.test.com扫描一部分IP nmap  192.168.1.1-20扫描网段   nmap 192.168.1.0/24从文件进行扫描 nmap -iL ip.lst  1以上都是默认扫描，默认扫描1000个tcp端口，会进行主机发现  端口选择 扫描单端口       nmap -p 22  192.1">
+<meta name="keywords" content="安全,Linux">
+<meta property="og:type" content="article">
+<meta property="og:title" content="topman">
+<meta property="og:url" content="http://topman.online/2019/07/02/nmap/index.html">
+<meta property="og:site_name" content="topman">
+<meta property="og:description" content="目标选择 扫描单IP   nmap 192.168.1.1扫描主机   nmap www.test.com扫描一部分IP nmap  192.168.1.1-20扫描网段   nmap 192.168.1.0/24从文件进行扫描 nmap -iL ip.lst  1以上都是默认扫描，默认扫描1000个tcp端口，会进行主机发现  端口选择 扫描单端口       nmap -p 22  192.1">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-06-21T03:10:21.958Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="topman">
+<meta name="twitter:description" content="目标选择 扫描单IP   nmap 192.168.1.1扫描主机   nmap www.test.com扫描一部分IP nmap  192.168.1.1-20扫描网段   nmap 192.168.1.0/24从文件进行扫描 nmap -iL ip.lst  1以上都是默认扫描，默认扫描1000个tcp端口，会进行主机发现  端口选择 扫描单端口       nmap -p 22  192.1">
+  
+    <link rel="alternate" href="/atom.xml" title="topman" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">topman</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">girls</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://topman.online"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-nmap" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/07/02/nmap/" class="article-date">
+  <time datetime="2019-07-02T13:25:44.070Z" itemprop="datePublished">2019-07-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="目标选择"><a href="#目标选择" class="headerlink" title="目标选择"></a>目标选择</h2><blockquote>
+<p>扫描单IP   nmap 192.168.1.1<br>扫描主机   nmap <a href="http://www.test.com" target="_blank" rel="noopener">www.test.com</a><br>扫描一部分IP nmap  192.168.1.1-20<br>扫描网段   nmap 192.168.1.0/24<br>从文件进行扫描 nmap -iL ip.lst</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">以上都是默认扫描，默认扫描1000个tcp端口，会进行主机发现</span><br></pre></td></tr></table></figure>
+
+<h2 id="端口选择"><a href="#端口选择" class="headerlink" title="端口选择"></a>端口选择</h2><blockquote>
+<p>扫描单端口       nmap -p 22  192.168.1.1<br>扫描一部分端口   nmap -p 1-100 192.168.1.1<br>扫描常用端口     nmap -F 192.168.1.1<br>扫描全部端口     nmap -p- 192.168.1.1</p>
+</blockquote>
+<h2 id="扫描类型选项"><a href="#扫描类型选项" class="headerlink" title="扫描类型选项"></a>扫描类型选项</h2><blockquote>
+<p>使用TCP连接扫描   nmap -sT  192.168.1.1<br>使用TCP SYN扫描   nmap -sS  192.168.1.1<br>扫描UDP端口       nmap -sU -p 123,161,162  192.168.1.1<br>不进行主机发现，快速扫描端口  nmap -F -Pn 192.168.1.1</p>
+</blockquote>
+<h2 id="服务和操作系统检测"><a href="#服务和操作系统检测" class="headerlink" title="服务和操作系统检测"></a>服务和操作系统检测</h2><blockquote>
+<p>准检测   nmap -A 192.168.1.1<br>标准服务检测 nmap -sV 192.168.1.1<br>更加积极的服务检测 nmap -sV –version-intensity 9 192.168.1.1<br>更加轻量级的服务检测 nmap -sV –version 0 192.168.1.1</p>
+</blockquote>
+<h2 id="NSE脚本引擎检测"><a href="#NSE脚本引擎检测" class="headerlink" title="NSE脚本引擎检测"></a>NSE脚本引擎检测</h2><blockquote>
+<p>使用默认安全脚本扫描 nmap -sV -sC 192.168.1.1<br>获取脚本帮助  nmap –script-help=ssl-heartbleed<br>使用特定脚本进行扫描 nmap -sV -p 443 –script=ssl-heartbleed 192.168.1.1<br>使用一组脚本进行扫描 nmap -sV –script=smb* 192.168.1.1</p>
+</blockquote>
+<h2 id="waf探测"><a href="#waf探测" class="headerlink" title="waf探测"></a>waf探测</h2><blockquote>
+<p>nmap –script=http-waf-detect 192.168.1.1<br>nmap –script=http-waf-fingerprint 192.168.1.1</p>
+</blockquote>
+<h2 id="结果输出"><a href="#结果输出" class="headerlink" title="结果输出"></a>结果输出</h2><blockquote>
+<p>将默认结果保存到文件   nmap -oN outputfile.txt 192.168.1.1<br>将结果保存为XML       nmap -oX ouputfile.xml 192.168.1.1<br>将结果保存为grep的格式 nmap -oG ouputfile.grep  192.168.1.1<br>保存所有格式           nmap -oA ouputfile  192.168.1.1</p>
+</blockquote>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://topman.online/2019/07/02/nmap/" data-id="cjxluht7w0000ts1y8a8rkijd" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/07/02/upload-labs/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/07/02/http/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">http头认识</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">七月 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/07/02/万能密码/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/07/02/xxe/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/07/02/xss/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/07/02/upload-labs/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/07/02/nmap/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 topxu<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
