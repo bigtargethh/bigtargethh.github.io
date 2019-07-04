@@ -70,6 +70,42 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-scanner_ports" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/07/04/scanner_ports/" class="article-date">
+  <time datetime="2019-07-04T10:01:00.523Z" itemprop="datePublished">2019-07-04</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<h2 id="端口扫描"><a href="#端口扫描" class="headerlink" title="端口扫描"></a>端口扫描</h2><p>注： 不要只扫一次</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">masscan -p 0-65535 192.168.1.1 --rate 1000</span><br></pre></td></tr></table></figure>
+
+<p>针对扫描结果端口进行服务甄别</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nmap -Pn -p 22,6379,3389,8080 -sV -sC 192.168.1.1</span><br></pre></td></tr></table></figure>
+
+<p>漏洞扫描</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nmap -Pn -p 22 -sV --script vuln 192.168.1.1</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://topman.online/2019/07/04/scanner_ports/" data-id="cjxoidwpx0000541ypl89sl87" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-http" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/07/02/http/" class="article-date">
@@ -127,7 +163,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://topman.online/2019/07/02/http/" data-id="cjxlvawb30000eo1yzabuv0ej" class="article-share-link">Share</a>
+      <a data-url="http://topman.online/2019/07/02/http/" data-id="cjxoidwq30001541y31c4cxmw" class="article-share-link">Share</a>
       
       
     </footer>
@@ -166,6 +202,10 @@
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2019/07/04/scanner_ports/">(no title)</a>
+          </li>
         
           <li>
             <a href="/2019/07/02/http/">http头认识</a>
